@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PerformanceChart}from"../../lib/portfolio/tracker/PerformanceChart";
+describe("PerformanceChart",()=>{it("ok",()=>expect(new PerformanceChart()).toBeDefined());it("state",()=>{const x=new PerformanceChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PerformanceChart();x.disable();expect(x.isActive()).toBe(false);});});
