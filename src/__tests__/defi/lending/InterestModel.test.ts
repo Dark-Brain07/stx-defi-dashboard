@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{InterestModel}from"../../lib/defi/lending/InterestModel";
+describe("InterestModel",()=>{it("ok",()=>expect(new InterestModel()).toBeDefined());it("state",()=>{const x=new InterestModel();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new InterestModel();x.disable();expect(x.isActive()).toBe(false);});});
