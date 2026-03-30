@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BorrowManager}from"../../lib/defi/lending/BorrowManager";
+describe("BorrowManager",()=>{it("ok",()=>expect(new BorrowManager()).toBeDefined());it("state",()=>{const x=new BorrowManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BorrowManager();x.disable();expect(x.isActive()).toBe(false);});});
