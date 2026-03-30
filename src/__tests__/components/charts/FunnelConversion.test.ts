@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FunnelConversion}from"../../lib/components/charts/FunnelConversion";
+describe("FunnelConversion",()=>{it("ok",()=>expect(new FunnelConversion()).toBeDefined());it("state",()=>{const x=new FunnelConversion();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FunnelConversion();x.disable();expect(x.isActive()).toBe(false);});});
