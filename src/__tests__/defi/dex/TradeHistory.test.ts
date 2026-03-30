@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TradeHistory}from"../../lib/defi/dex/TradeHistory";
+describe("TradeHistory",()=>{it("ok",()=>expect(new TradeHistory()).toBeDefined());it("state",()=>{const x=new TradeHistory();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TradeHistory();x.disable();expect(x.isActive()).toBe(false);});});
