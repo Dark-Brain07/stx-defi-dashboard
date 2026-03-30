@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FeeAccumulator}from"../../lib/defi/dex/FeeAccumulator";
+describe("FeeAccumulator",()=>{it("ok",()=>expect(new FeeAccumulator()).toBeDefined());it("state",()=>{const x=new FeeAccumulator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FeeAccumulator();x.disable();expect(x.isActive()).toBe(false);});});
