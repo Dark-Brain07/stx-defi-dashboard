@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PairRegistry}from"../../lib/defi/dex/PairRegistry";
+describe("PairRegistry",()=>{it("ok",()=>expect(new PairRegistry()).toBeDefined());it("state",()=>{const x=new PairRegistry();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PairRegistry();x.disable();expect(x.isActive()).toBe(false);});});
