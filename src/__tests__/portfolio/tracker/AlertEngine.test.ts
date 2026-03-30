@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AlertEngine}from"../../lib/portfolio/tracker/AlertEngine";
+describe("AlertEngine",()=>{it("ok",()=>expect(new AlertEngine()).toBeDefined());it("state",()=>{const x=new AlertEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AlertEngine();x.disable();expect(x.isActive()).toBe(false);});});
