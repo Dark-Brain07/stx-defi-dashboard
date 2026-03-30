@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CompoundEngine}from"../../lib/defi/yield/CompoundEngine";
+describe("CompoundEngine",()=>{it("ok",()=>expect(new CompoundEngine()).toBeDefined());it("state",()=>{const x=new CompoundEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CompoundEngine();x.disable();expect(x.isActive()).toBe(false);});});
