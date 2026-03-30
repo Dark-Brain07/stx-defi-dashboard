@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VolumeBarChart}from"../../lib/components/charts/VolumeBarChart";
+describe("VolumeBarChart",()=>{it("ok",()=>expect(new VolumeBarChart()).toBeDefined());it("state",()=>{const x=new VolumeBarChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VolumeBarChart();x.disable();expect(x.isActive()).toBe(false);});});
