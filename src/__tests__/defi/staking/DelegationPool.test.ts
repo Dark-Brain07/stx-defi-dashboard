@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DelegationPool}from"../../lib/defi/staking/DelegationPool";
+describe("DelegationPool",()=>{it("ok",()=>expect(new DelegationPool()).toBeDefined());it("state",()=>{const x=new DelegationPool();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DelegationPool();x.disable();expect(x.isActive()).toBe(false);});});
