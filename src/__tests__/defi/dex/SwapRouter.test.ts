@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SwapRouter}from"../../lib/defi/dex/SwapRouter";
+describe("SwapRouter",()=>{it("ok",()=>expect(new SwapRouter()).toBeDefined());it("state",()=>{const x=new SwapRouter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SwapRouter();x.disable();expect(x.isActive()).toBe(false);});});
