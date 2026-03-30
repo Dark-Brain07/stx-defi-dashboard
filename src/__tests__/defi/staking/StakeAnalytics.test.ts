@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StakeAnalytics}from"../../lib/defi/staking/StakeAnalytics";
+describe("StakeAnalytics",()=>{it("ok",()=>expect(new StakeAnalytics()).toBeDefined());it("state",()=>{const x=new StakeAnalytics();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StakeAnalytics();x.disable();expect(x.isActive()).toBe(false);});});
