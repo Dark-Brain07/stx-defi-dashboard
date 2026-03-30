@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AutoCompounder}from"../../lib/defi/yield/AutoCompounder";
+describe("AutoCompounder",()=>{it("ok",()=>expect(new AutoCompounder()).toBeDefined());it("state",()=>{const x=new AutoCompounder();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AutoCompounder();x.disable();expect(x.isActive()).toBe(false);});});
