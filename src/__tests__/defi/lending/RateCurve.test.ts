@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RateCurve}from"../../lib/defi/lending/RateCurve";
+describe("RateCurve",()=>{it("ok",()=>expect(new RateCurve()).toBeDefined());it("state",()=>{const x=new RateCurve();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RateCurve();x.disable();expect(x.isActive()).toBe(false);});});
