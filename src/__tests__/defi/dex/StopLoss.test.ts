@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StopLoss}from"../../lib/defi/dex/StopLoss";
+describe("StopLoss",()=>{it("ok",()=>expect(new StopLoss()).toBeDefined());it("state",()=>{const x=new StopLoss();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StopLoss();x.disable();expect(x.isActive()).toBe(false);});});
