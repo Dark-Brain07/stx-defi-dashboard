@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{GovernanceStake}from"../../lib/defi/staking/GovernanceStake";
+describe("GovernanceStake",()=>{it("ok",()=>expect(new GovernanceStake()).toBeDefined());it("state",()=>{const x=new GovernanceStake();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new GovernanceStake();x.disable();expect(x.isActive()).toBe(false);});});
