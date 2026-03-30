@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PositionManager}from"../../lib/defi/yield/PositionManager";
+describe("PositionManager",()=>{it("ok",()=>expect(new PositionManager()).toBeDefined());it("state",()=>{const x=new PositionManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PositionManager();x.disable();expect(x.isActive()).toBe(false);});});
