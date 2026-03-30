@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SupplyTracker}from"../../lib/defi/lending/SupplyTracker";
+describe("SupplyTracker",()=>{it("ok",()=>expect(new SupplyTracker()).toBeDefined());it("state",()=>{const x=new SupplyTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SupplyTracker();x.disable();expect(x.isActive()).toBe(false);});});
