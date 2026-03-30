@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TreemapProtocol}from"../../lib/components/charts/TreemapProtocol";
+describe("TreemapProtocol",()=>{it("ok",()=>expect(new TreemapProtocol()).toBeDefined());it("state",()=>{const x=new TreemapProtocol();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TreemapProtocol();x.disable();expect(x.isActive()).toBe(false);});});
