@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{HeatmapGrid}from"../../lib/components/charts/HeatmapGrid";
+describe("HeatmapGrid",()=>{it("ok",()=>expect(new HeatmapGrid()).toBeDefined());it("state",()=>{const x=new HeatmapGrid();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new HeatmapGrid();x.disable();expect(x.isActive()).toBe(false);});});
