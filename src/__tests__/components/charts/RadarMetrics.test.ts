@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RadarMetrics}from"../../lib/components/charts/RadarMetrics";
+describe("RadarMetrics",()=>{it("ok",()=>expect(new RadarMetrics()).toBeDefined());it("state",()=>{const x=new RadarMetrics();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RadarMetrics();x.disable();expect(x.isActive()).toBe(false);});});
