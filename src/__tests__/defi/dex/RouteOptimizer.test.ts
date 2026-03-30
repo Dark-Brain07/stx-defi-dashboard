@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RouteOptimizer}from"../../lib/defi/dex/RouteOptimizer";
+describe("RouteOptimizer",()=>{it("ok",()=>expect(new RouteOptimizer()).toBeDefined());it("state",()=>{const x=new RouteOptimizer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RouteOptimizer();x.disable();expect(x.isActive()).toBe(false);});});
