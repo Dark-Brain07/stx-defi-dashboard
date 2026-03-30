@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PriceImpact}from"../../lib/defi/dex/PriceImpact";
+describe("PriceImpact",()=>{it("ok",()=>expect(new PriceImpact()).toBeDefined());it("state",()=>{const x=new PriceImpact();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PriceImpact();x.disable();expect(x.isActive()).toBe(false);});});
