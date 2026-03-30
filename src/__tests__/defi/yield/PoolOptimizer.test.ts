@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PoolOptimizer}from"../../lib/defi/yield/PoolOptimizer";
+describe("PoolOptimizer",()=>{it("ok",()=>expect(new PoolOptimizer()).toBeDefined());it("state",()=>{const x=new PoolOptimizer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PoolOptimizer();x.disable();expect(x.isActive()).toBe(false);});});
