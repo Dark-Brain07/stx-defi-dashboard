@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RewardDistribution}from"../../lib/defi/staking/RewardDistribution";
+describe("RewardDistribution",()=>{it("ok",()=>expect(new RewardDistribution()).toBeDefined());it("state",()=>{const x=new RewardDistribution();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RewardDistribution();x.disable();expect(x.isActive()).toBe(false);});});
