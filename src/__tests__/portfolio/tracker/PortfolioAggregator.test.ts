@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PortfolioAggregator}from"../../lib/portfolio/tracker/PortfolioAggregator";
+describe("PortfolioAggregator",()=>{it("ok",()=>expect(new PortfolioAggregator()).toBeDefined());it("state",()=>{const x=new PortfolioAggregator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PortfolioAggregator();x.disable();expect(x.isActive()).toBe(false);});});
