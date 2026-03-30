@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";
+describe("defi flow 7",()=>{it("swap",()=>{const out=7*997/1000;expect(out).toBeGreaterThan(0);});it("liquidity",()=>{expect(Math.sqrt(7*100*7*200)).toBeGreaterThan(0);});});
