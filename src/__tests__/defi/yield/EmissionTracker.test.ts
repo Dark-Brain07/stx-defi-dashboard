@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{EmissionTracker}from"../../lib/defi/yield/EmissionTracker";
+describe("EmissionTracker",()=>{it("ok",()=>expect(new EmissionTracker()).toBeDefined());it("state",()=>{const x=new EmissionTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new EmissionTracker();x.disable();expect(x.isActive()).toBe(false);});});
