@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StakeWeightCalc}from"../../lib/defi/staking/StakeWeightCalc";
+describe("StakeWeightCalc",()=>{it("ok",()=>expect(new StakeWeightCalc()).toBeDefined());it("state",()=>{const x=new StakeWeightCalc();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StakeWeightCalc();x.disable();expect(x.isActive()).toBe(false);});});
