@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StakingVault}from"../../lib/defi/staking/StakingVault";
+describe("StakingVault",()=>{it("ok",()=>expect(new StakingVault()).toBeDefined());it("state",()=>{const x=new StakingVault();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StakingVault();x.disable();expect(x.isActive()).toBe(false);});});
