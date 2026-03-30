@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AreaSparkline}from"../../lib/components/charts/AreaSparkline";
+describe("AreaSparkline",()=>{it("ok",()=>expect(new AreaSparkline()).toBeDefined());it("state",()=>{const x=new AreaSparkline();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AreaSparkline();x.disable();expect(x.isActive()).toBe(false);});});
