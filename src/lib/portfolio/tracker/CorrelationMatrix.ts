@@ -1,0 +1,1 @@
+export class CorrelationMatrix{private s:Record<string,any>={};private on=true;enable(){this.on=true;}disable(){this.on=false;}isActive(){return this.on;}get<T=any>(k:string):T{return this.s[k];}set(k:string,v:any){this.s[k]=v;}has(k:string){return k in this.s;}reset(){this.s={};this.on=true;}dispose(){this.s={};this.on=false;}toJSON(){return{active:this.on,...this.s};}}
