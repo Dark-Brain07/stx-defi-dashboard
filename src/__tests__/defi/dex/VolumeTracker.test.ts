@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VolumeTracker}from"../../lib/defi/dex/VolumeTracker";
+describe("VolumeTracker",()=>{it("ok",()=>expect(new VolumeTracker()).toBeDefined());it("state",()=>{const x=new VolumeTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VolumeTracker();x.disable();expect(x.isActive()).toBe(false);});});
