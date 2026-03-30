@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{APYCalculator}from"../../lib/defi/yield/APYCalculator";
+describe("APYCalculator",()=>{it("ok",()=>expect(new APYCalculator()).toBeDefined());it("state",()=>{const x=new APYCalculator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new APYCalculator();x.disable();expect(x.isActive()).toBe(false);});});
