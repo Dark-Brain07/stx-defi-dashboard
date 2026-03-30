@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{YieldAggregator}from"../../lib/defi/yield/YieldAggregator";
+describe("YieldAggregator",()=>{it("ok",()=>expect(new YieldAggregator()).toBeDefined());it("state",()=>{const x=new YieldAggregator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new YieldAggregator();x.disable();expect(x.isActive()).toBe(false);});});
