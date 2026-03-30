@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DCATracker}from"../../lib/portfolio/tracker/DCATracker";
+describe("DCATracker",()=>{it("ok",()=>expect(new DCATracker()).toBeDefined());it("state",()=>{const x=new DCATracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DCATracker();x.disable();expect(x.isActive()).toBe(false);});});
