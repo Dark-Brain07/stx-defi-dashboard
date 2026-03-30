@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LockManager}from"../../lib/defi/yield/LockManager";
+describe("LockManager",()=>{it("ok",()=>expect(new LockManager()).toBeDefined());it("state",()=>{const x=new LockManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LockManager();x.disable();expect(x.isActive()).toBe(false);});});
