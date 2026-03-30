@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VotingPower}from"../../lib/defi/staking/VotingPower";
+describe("VotingPower",()=>{it("ok",()=>expect(new VotingPower()).toBeDefined());it("state",()=>{const x=new VotingPower();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VotingPower();x.disable();expect(x.isActive()).toBe(false);});});
