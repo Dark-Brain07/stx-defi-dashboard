@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CooldownTimer}from"../../lib/defi/staking/CooldownTimer";
+describe("CooldownTimer",()=>{it("ok",()=>expect(new CooldownTimer()).toBeDefined());it("state",()=>{const x=new CooldownTimer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CooldownTimer();x.disable();expect(x.isActive()).toBe(false);});});
