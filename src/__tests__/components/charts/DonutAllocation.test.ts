@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DonutAllocation}from"../../lib/components/charts/DonutAllocation";
+describe("DonutAllocation",()=>{it("ok",()=>expect(new DonutAllocation()).toBeDefined());it("state",()=>{const x=new DonutAllocation();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DonutAllocation();x.disable();expect(x.isActive()).toBe(false);});});
