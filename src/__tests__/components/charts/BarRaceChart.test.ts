@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BarRaceChart}from"../../lib/components/charts/BarRaceChart";
+describe("BarRaceChart",()=>{it("ok",()=>expect(new BarRaceChart()).toBeDefined());it("state",()=>{const x=new BarRaceChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BarRaceChart();x.disable();expect(x.isActive()).toBe(false);});});
