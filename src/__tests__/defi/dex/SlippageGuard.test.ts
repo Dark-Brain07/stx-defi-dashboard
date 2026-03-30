@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SlippageGuard}from"../../lib/defi/dex/SlippageGuard";
+describe("SlippageGuard",()=>{it("ok",()=>expect(new SlippageGuard()).toBeDefined());it("state",()=>{const x=new SlippageGuard();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SlippageGuard();x.disable();expect(x.isActive()).toBe(false);});});
