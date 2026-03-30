@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AssetAllocator}from"../../lib/portfolio/tracker/AssetAllocator";
+describe("AssetAllocator",()=>{it("ok",()=>expect(new AssetAllocator()).toBeDefined());it("state",()=>{const x=new AssetAllocator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AssetAllocator();x.disable();expect(x.isActive()).toBe(false);});});
