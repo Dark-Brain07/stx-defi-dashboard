@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{HealthFactor}from"../../lib/defi/lending/HealthFactor";
+describe("HealthFactor",()=>{it("ok",()=>expect(new HealthFactor()).toBeDefined());it("state",()=>{const x=new HealthFactor();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new HealthFactor();x.disable();expect(x.isActive()).toBe(false);});});
