@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{UnstakeQueue}from"../../lib/defi/staking/UnstakeQueue";
+describe("UnstakeQueue",()=>{it("ok",()=>expect(new UnstakeQueue()).toBeDefined());it("state",()=>{const x=new UnstakeQueue();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new UnstakeQueue();x.disable();expect(x.isActive()).toBe(false);});});
