@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{OrderBook}from"../../lib/defi/dex/OrderBook";
+describe("OrderBook",()=>{it("ok",()=>expect(new OrderBook()).toBeDefined());it("state",()=>{const x=new OrderBook();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new OrderBook();x.disable();expect(x.isActive()).toBe(false);});});
