@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{WatchlistManager}from"../../lib/portfolio/tracker/WatchlistManager";
+describe("WatchlistManager",()=>{it("ok",()=>expect(new WatchlistManager()).toBeDefined());it("state",()=>{const x=new WatchlistManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new WatchlistManager();x.disable();expect(x.isActive()).toBe(false);});});
