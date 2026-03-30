@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BubbleMarketCap}from"../../lib/components/charts/BubbleMarketCap";
+describe("BubbleMarketCap",()=>{it("ok",()=>expect(new BubbleMarketCap()).toBeDefined());it("state",()=>{const x=new BubbleMarketCap();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BubbleMarketCap();x.disable();expect(x.isActive()).toBe(false);});});
