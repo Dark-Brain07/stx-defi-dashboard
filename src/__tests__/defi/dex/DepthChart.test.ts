@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DepthChart}from"../../lib/defi/dex/DepthChart";
+describe("DepthChart",()=>{it("ok",()=>expect(new DepthChart()).toBeDefined());it("state",()=>{const x=new DepthChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DepthChart();x.disable();expect(x.isActive()).toBe(false);});});
