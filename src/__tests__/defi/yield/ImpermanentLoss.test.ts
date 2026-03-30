@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ImpermanentLoss}from"../../lib/defi/yield/ImpermanentLoss";
+describe("ImpermanentLoss",()=>{it("ok",()=>expect(new ImpermanentLoss()).toBeDefined());it("state",()=>{const x=new ImpermanentLoss();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ImpermanentLoss();x.disable();expect(x.isActive()).toBe(false);});});
