@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TWAPOrder}from"../../lib/defi/dex/TWAPOrder";
+describe("TWAPOrder",()=>{it("ok",()=>expect(new TWAPOrder()).toBeDefined());it("state",()=>{const x=new TWAPOrder();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TWAPOrder();x.disable();expect(x.isActive()).toBe(false);});});
