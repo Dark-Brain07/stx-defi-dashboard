@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{UtilizationTracker}from"../../lib/defi/lending/UtilizationTracker";
+describe("UtilizationTracker",()=>{it("ok",()=>expect(new UtilizationTracker()).toBeDefined());it("state",()=>{const x=new UtilizationTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new UtilizationTracker();x.disable();expect(x.isActive()).toBe(false);});});
