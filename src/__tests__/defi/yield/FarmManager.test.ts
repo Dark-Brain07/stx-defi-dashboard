@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FarmManager}from"../../lib/defi/yield/FarmManager";
+describe("FarmManager",()=>{it("ok",()=>expect(new FarmManager()).toBeDefined());it("state",()=>{const x=new FarmManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FarmManager();x.disable();expect(x.isActive()).toBe(false);});});
