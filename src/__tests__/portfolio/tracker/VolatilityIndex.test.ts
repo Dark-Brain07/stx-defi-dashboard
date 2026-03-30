@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VolatilityIndex}from"../../lib/portfolio/tracker/VolatilityIndex";
+describe("VolatilityIndex",()=>{it("ok",()=>expect(new VolatilityIndex()).toBeDefined());it("state",()=>{const x=new VolatilityIndex();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VolatilityIndex();x.disable();expect(x.isActive()).toBe(false);});});
