@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RebalanceEngine}from"../../lib/portfolio/tracker/RebalanceEngine";
+describe("RebalanceEngine",()=>{it("ok",()=>expect(new RebalanceEngine()).toBeDefined());it("state",()=>{const x=new RebalanceEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RebalanceEngine();x.disable();expect(x.isActive()).toBe(false);});});
