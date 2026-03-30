@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{HarvestScheduler}from"../../lib/defi/yield/HarvestScheduler";
+describe("HarvestScheduler",()=>{it("ok",()=>expect(new HarvestScheduler()).toBeDefined());it("state",()=>{const x=new HarvestScheduler();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new HarvestScheduler();x.disable();expect(x.isActive()).toBe(false);});});
