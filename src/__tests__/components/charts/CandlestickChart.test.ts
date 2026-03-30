@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CandlestickChart}from"../../lib/components/charts/CandlestickChart";
+describe("CandlestickChart",()=>{it("ok",()=>expect(new CandlestickChart()).toBeDefined());it("state",()=>{const x=new CandlestickChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CandlestickChart();x.disable();expect(x.isActive()).toBe(false);});});
