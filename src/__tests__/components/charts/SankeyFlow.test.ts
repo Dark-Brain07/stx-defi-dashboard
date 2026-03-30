@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SankeyFlow}from"../../lib/components/charts/SankeyFlow";
+describe("SankeyFlow",()=>{it("ok",()=>expect(new SankeyFlow()).toBeDefined());it("state",()=>{const x=new SankeyFlow();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SankeyFlow();x.disable();expect(x.isActive()).toBe(false);});});
