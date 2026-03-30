@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StakeRouter}from"../../lib/defi/staking/StakeRouter";
+describe("StakeRouter",()=>{it("ok",()=>expect(new StakeRouter()).toBeDefined());it("state",()=>{const x=new StakeRouter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StakeRouter();x.disable();expect(x.isActive()).toBe(false);});});
