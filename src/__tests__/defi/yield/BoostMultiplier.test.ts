@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BoostMultiplier}from"../../lib/defi/yield/BoostMultiplier";
+describe("BoostMultiplier",()=>{it("ok",()=>expect(new BoostMultiplier()).toBeDefined());it("state",()=>{const x=new BoostMultiplier();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BoostMultiplier();x.disable();expect(x.isActive()).toBe(false);});});
