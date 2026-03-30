@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LiquidationBot}from"../../lib/defi/lending/LiquidationBot";
+describe("LiquidationBot",()=>{it("ok",()=>expect(new LiquidationBot()).toBeDefined());it("state",()=>{const x=new LiquidationBot();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LiquidationBot();x.disable();expect(x.isActive()).toBe(false);});});
