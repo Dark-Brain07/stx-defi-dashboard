@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TimelineChart}from"../../lib/components/charts/TimelineChart";
+describe("TimelineChart",()=>{it("ok",()=>expect(new TimelineChart()).toBeDefined());it("state",()=>{const x=new TimelineChart();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TimelineChart();x.disable();expect(x.isActive()).toBe(false);});});
