@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RiskAssessor}from"../../lib/defi/yield/RiskAssessor";
+describe("RiskAssessor",()=>{it("ok",()=>expect(new RiskAssessor()).toBeDefined());it("state",()=>{const x=new RiskAssessor();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RiskAssessor();x.disable();expect(x.isActive()).toBe(false);});});
