@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RepayManager}from"../../lib/defi/lending/RepayManager";
+describe("RepayManager",()=>{it("ok",()=>expect(new RepayManager()).toBeDefined());it("state",()=>{const x=new RepayManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RepayManager();x.disable();expect(x.isActive()).toBe(false);});});
