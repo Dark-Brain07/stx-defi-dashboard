@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StrategyVault}from"../../lib/defi/yield/StrategyVault";
+describe("StrategyVault",()=>{it("ok",()=>expect(new StrategyVault()).toBeDefined());it("state",()=>{const x=new StrategyVault();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StrategyVault();x.disable();expect(x.isActive()).toBe(false);});});
