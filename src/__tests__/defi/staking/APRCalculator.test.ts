@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{APRCalculator}from"../../lib/defi/staking/APRCalculator";
+describe("APRCalculator",()=>{it("ok",()=>expect(new APRCalculator()).toBeDefined());it("state",()=>{const x=new APRCalculator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new APRCalculator();x.disable();expect(x.isActive()).toBe(false);});});
