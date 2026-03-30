@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{HistoricalData}from"../../lib/portfolio/tracker/HistoricalData";
+describe("HistoricalData",()=>{it("ok",()=>expect(new HistoricalData()).toBeDefined());it("state",()=>{const x=new HistoricalData();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new HistoricalData();x.disable();expect(x.isActive()).toBe(false);});});
