@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CollateralEngine}from"../../lib/defi/lending/CollateralEngine";
+describe("CollateralEngine",()=>{it("ok",()=>expect(new CollateralEngine()).toBeDefined());it("state",()=>{const x=new CollateralEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CollateralEngine();x.disable();expect(x.isActive()).toBe(false);});});
