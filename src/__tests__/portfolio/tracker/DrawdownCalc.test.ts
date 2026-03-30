@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DrawdownCalc}from"../../lib/portfolio/tracker/DrawdownCalc";
+describe("DrawdownCalc",()=>{it("ok",()=>expect(new DrawdownCalc()).toBeDefined());it("state",()=>{const x=new DrawdownCalc();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DrawdownCalc();x.disable();expect(x.isActive()).toBe(false);});});
