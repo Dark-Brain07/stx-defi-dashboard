@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AMMLiquidity}from"../../lib/defi/dex/AMMLiquidity";
+describe("AMMLiquidity",()=>{it("ok",()=>expect(new AMMLiquidity()).toBeDefined());it("state",()=>{const x=new AMMLiquidity();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AMMLiquidity();x.disable();expect(x.isActive()).toBe(false);});});
