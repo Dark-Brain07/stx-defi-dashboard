@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{GaugeWidget}from"../../lib/components/charts/GaugeWidget";
+describe("GaugeWidget",()=>{it("ok",()=>expect(new GaugeWidget()).toBeDefined());it("state",()=>{const x=new GaugeWidget();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new GaugeWidget();x.disable();expect(x.isActive()).toBe(false);});});
