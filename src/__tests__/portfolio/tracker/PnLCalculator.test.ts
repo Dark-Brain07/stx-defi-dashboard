@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PnLCalculator}from"../../lib/portfolio/tracker/PnLCalculator";
+describe("PnLCalculator",()=>{it("ok",()=>expect(new PnLCalculator()).toBeDefined());it("state",()=>{const x=new PnLCalculator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PnLCalculator();x.disable();expect(x.isActive()).toBe(false);});});
