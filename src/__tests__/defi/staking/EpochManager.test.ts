@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{EpochManager}from"../../lib/defi/staking/EpochManager";
+describe("EpochManager",()=>{it("ok",()=>expect(new EpochManager()).toBeDefined());it("state",()=>{const x=new EpochManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new EpochManager();x.disable();expect(x.isActive()).toBe(false);});});
