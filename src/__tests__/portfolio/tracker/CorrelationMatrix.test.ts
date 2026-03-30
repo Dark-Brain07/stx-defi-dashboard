@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CorrelationMatrix}from"../../lib/portfolio/tracker/CorrelationMatrix";
+describe("CorrelationMatrix",()=>{it("ok",()=>expect(new CorrelationMatrix()).toBeDefined());it("state",()=>{const x=new CorrelationMatrix();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CorrelationMatrix();x.disable();expect(x.isActive()).toBe(false);});});
