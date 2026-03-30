@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RewardVault}from"../../lib/defi/yield/RewardVault";
+describe("RewardVault",()=>{it("ok",()=>expect(new RewardVault()).toBeDefined());it("state",()=>{const x=new RewardVault();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RewardVault();x.disable();expect(x.isActive()).toBe(false);});});
