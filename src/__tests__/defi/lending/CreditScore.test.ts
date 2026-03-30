@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CreditScore}from"../../lib/defi/lending/CreditScore";
+describe("CreditScore",()=>{it("ok",()=>expect(new CreditScore()).toBeDefined());it("state",()=>{const x=new CreditScore();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CreditScore();x.disable();expect(x.isActive()).toBe(false);});});
