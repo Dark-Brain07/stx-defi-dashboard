@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DebtTracker}from"../../lib/defi/lending/DebtTracker";
+describe("DebtTracker",()=>{it("ok",()=>expect(new DebtTracker()).toBeDefined());it("state",()=>{const x=new DebtTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DebtTracker();x.disable();expect(x.isActive()).toBe(false);});});
