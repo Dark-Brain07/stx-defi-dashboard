@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FlashLoanEngine}from"../../lib/defi/lending/FlashLoanEngine";
+describe("FlashLoanEngine",()=>{it("ok",()=>expect(new FlashLoanEngine()).toBeDefined());it("state",()=>{const x=new FlashLoanEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FlashLoanEngine();x.disable();expect(x.isActive()).toBe(false);});});
