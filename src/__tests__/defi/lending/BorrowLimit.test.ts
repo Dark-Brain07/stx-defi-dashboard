@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BorrowLimit}from"../../lib/defi/lending/BorrowLimit";
+describe("BorrowLimit",()=>{it("ok",()=>expect(new BorrowLimit()).toBeDefined());it("state",()=>{const x=new BorrowLimit();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BorrowLimit();x.disable();expect(x.isActive()).toBe(false);});});
