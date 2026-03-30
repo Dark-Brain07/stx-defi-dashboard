@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LendingPool}from"../../lib/defi/lending/LendingPool";
+describe("LendingPool",()=>{it("ok",()=>expect(new LendingPool()).toBeDefined());it("state",()=>{const x=new LendingPool();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LendingPool();x.disable();expect(x.isActive()).toBe(false);});});
