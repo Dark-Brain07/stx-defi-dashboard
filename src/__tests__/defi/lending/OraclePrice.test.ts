@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{OraclePrice}from"../../lib/defi/lending/OraclePrice";
+describe("OraclePrice",()=>{it("ok",()=>expect(new OraclePrice()).toBeDefined());it("state",()=>{const x=new OraclePrice();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new OraclePrice();x.disable();expect(x.isActive()).toBe(false);});});
