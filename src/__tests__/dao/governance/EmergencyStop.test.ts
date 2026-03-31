@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{EmergencyStop}from"../../lib/dao/governance/EmergencyStop";
+describe("EmergencyStop",()=>{it("ok",()=>expect(new EmergencyStop()).toBeDefined());it("set/get",()=>{const x=new EmergencyStop();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new EmergencyStop();x.disable();expect(x.isActive()).toBe(false);});});
