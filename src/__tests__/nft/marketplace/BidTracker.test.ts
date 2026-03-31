@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BidTracker}from"../../lib/nft/marketplace/BidTracker";
+describe("BidTracker",()=>{it("ok",()=>expect(new BidTracker()).toBeDefined());it("set/get",()=>{const x=new BidTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BidTracker();x.disable();expect(x.isActive()).toBe(false);});});
