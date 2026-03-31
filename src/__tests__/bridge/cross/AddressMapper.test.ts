@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AddressMapper}from"../../lib/bridge/cross/AddressMapper";
+describe("AddressMapper",()=>{it("ok",()=>expect(new AddressMapper()).toBeDefined());it("set/get",()=>{const x=new AddressMapper();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AddressMapper();x.disable();expect(x.isActive()).toBe(false);});});
