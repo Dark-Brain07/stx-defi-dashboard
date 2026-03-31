@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ProposalFactory}from"../../lib/dao/governance/ProposalFactory";
+describe("ProposalFactory",()=>{it("ok",()=>expect(new ProposalFactory()).toBeDefined());it("set/get",()=>{const x=new ProposalFactory();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ProposalFactory();x.disable();expect(x.isActive()).toBe(false);});});
