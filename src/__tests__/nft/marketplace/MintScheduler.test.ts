@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{MintScheduler}from"../../lib/nft/marketplace/MintScheduler";
+describe("MintScheduler",()=>{it("ok",()=>expect(new MintScheduler()).toBeDefined());it("set/get",()=>{const x=new MintScheduler();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new MintScheduler();x.disable();expect(x.isActive()).toBe(false);});});
