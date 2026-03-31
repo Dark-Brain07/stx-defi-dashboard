@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FeatureFlags}from"../../lib/admin/panel/FeatureFlags";
+describe("FeatureFlags",()=>{it("ok",()=>expect(new FeatureFlags()).toBeDefined());it("set/get",()=>{const x=new FeatureFlags();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FeatureFlags();x.disable();expect(x.isActive()).toBe(false);});});
