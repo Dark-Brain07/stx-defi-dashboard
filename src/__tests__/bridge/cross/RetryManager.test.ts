@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RetryManager}from"../../lib/bridge/cross/RetryManager";
+describe("RetryManager",()=>{it("ok",()=>expect(new RetryManager()).toBeDefined());it("set/get",()=>{const x=new RetryManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RetryManager();x.disable();expect(x.isActive()).toBe(false);});});
