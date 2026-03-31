@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DiscordWebhook}from"../../lib/notification/system/DiscordWebhook";
+describe("DiscordWebhook",()=>{it("ok",()=>expect(new DiscordWebhook()).toBeDefined());it("set/get",()=>{const x=new DiscordWebhook();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DiscordWebhook();x.disable();expect(x.isActive()).toBe(false);});});
