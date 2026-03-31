@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{MetricsExporter}from"../../lib/admin/panel/MetricsExporter";
+describe("MetricsExporter",()=>{it("ok",()=>expect(new MetricsExporter()).toBeDefined());it("set/get",()=>{const x=new MetricsExporter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new MetricsExporter();x.disable();expect(x.isActive()).toBe(false);});});
