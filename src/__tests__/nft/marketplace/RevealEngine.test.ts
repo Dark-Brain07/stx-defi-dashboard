@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RevealEngine}from"../../lib/nft/marketplace/RevealEngine";
+describe("RevealEngine",()=>{it("ok",()=>expect(new RevealEngine()).toBeDefined());it("set/get",()=>{const x=new RevealEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RevealEngine();x.disable();expect(x.isActive()).toBe(false);});});
