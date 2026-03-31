@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AccessControl}from"../../lib/admin/panel/AccessControl";
+describe("AccessControl",()=>{it("ok",()=>expect(new AccessControl()).toBeDefined());it("set/get",()=>{const x=new AccessControl();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AccessControl();x.disable();expect(x.isActive()).toBe(false);});});
