@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AuctionManager}from"../../lib/nft/marketplace/AuctionManager";
+describe("AuctionManager",()=>{it("ok",()=>expect(new AuctionManager()).toBeDefined());it("set/get",()=>{const x=new AuctionManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AuctionManager();x.disable();expect(x.isActive()).toBe(false);});});
