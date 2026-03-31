@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ProposalQueue}from"../../lib/dao/governance/ProposalQueue";
+describe("ProposalQueue",()=>{it("ok",()=>expect(new ProposalQueue()).toBeDefined());it("set/get",()=>{const x=new ProposalQueue();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ProposalQueue();x.disable();expect(x.isActive()).toBe(false);});});
