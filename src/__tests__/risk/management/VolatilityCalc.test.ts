@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VolatilityCalc}from"../../lib/risk/management/VolatilityCalc";
+describe("VolatilityCalc",()=>{it("ok",()=>expect(new VolatilityCalc()).toBeDefined());it("set/get",()=>{const x=new VolatilityCalc();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VolatilityCalc();x.disable();expect(x.isActive()).toBe(false);});});
