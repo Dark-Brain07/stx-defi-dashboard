@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CacheControl}from"../../lib/admin/panel/CacheControl";
+describe("CacheControl",()=>{it("ok",()=>expect(new CacheControl()).toBeDefined());it("set/get",()=>{const x=new CacheControl();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CacheControl();x.disable();expect(x.isActive()).toBe(false);});});
