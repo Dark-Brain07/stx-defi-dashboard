@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FloorPriceTracker}from"../../lib/nft/marketplace/FloorPriceTracker";
+describe("FloorPriceTracker",()=>{it("ok",()=>expect(new FloorPriceTracker()).toBeDefined());it("set/get",()=>{const x=new FloorPriceTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FloorPriceTracker();x.disable();expect(x.isActive()).toBe(false);});});
