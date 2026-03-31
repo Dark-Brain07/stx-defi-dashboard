@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ContentFilter}from"../../lib/admin/panel/ContentFilter";
+describe("ContentFilter",()=>{it("ok",()=>expect(new ContentFilter()).toBeDefined());it("set/get",()=>{const x=new ContentFilter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ContentFilter();x.disable();expect(x.isActive()).toBe(false);});});
