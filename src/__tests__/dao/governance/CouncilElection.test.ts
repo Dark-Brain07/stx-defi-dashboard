@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CouncilElection}from"../../lib/dao/governance/CouncilElection";
+describe("CouncilElection",()=>{it("ok",()=>expect(new CouncilElection()).toBeDefined());it("set/get",()=>{const x=new CouncilElection();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CouncilElection();x.disable();expect(x.isActive()).toBe(false);});});
