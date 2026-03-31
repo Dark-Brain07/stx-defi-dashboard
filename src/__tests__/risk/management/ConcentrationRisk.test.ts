@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ConcentrationRisk}from"../../lib/risk/management/ConcentrationRisk";
+describe("ConcentrationRisk",()=>{it("ok",()=>expect(new ConcentrationRisk()).toBeDefined());it("set/get",()=>{const x=new ConcentrationRisk();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ConcentrationRisk();x.disable();expect(x.isActive()).toBe(false);});});
