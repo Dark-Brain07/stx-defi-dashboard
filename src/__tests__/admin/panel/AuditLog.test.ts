@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AuditLog}from"../../lib/admin/panel/AuditLog";
+describe("AuditLog",()=>{it("ok",()=>expect(new AuditLog()).toBeDefined());it("set/get",()=>{const x=new AuditLog();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AuditLog();x.disable();expect(x.isActive()).toBe(false);});});
