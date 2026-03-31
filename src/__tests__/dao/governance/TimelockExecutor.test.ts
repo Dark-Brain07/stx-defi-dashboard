@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TimelockExecutor}from"../../lib/dao/governance/TimelockExecutor";
+describe("TimelockExecutor",()=>{it("ok",()=>expect(new TimelockExecutor()).toBeDefined());it("set/get",()=>{const x=new TimelockExecutor();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TimelockExecutor();x.disable();expect(x.isActive()).toBe(false);});});
