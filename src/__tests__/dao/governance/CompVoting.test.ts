@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CompVoting}from"../../lib/dao/governance/CompVoting";
+describe("CompVoting",()=>{it("ok",()=>expect(new CompVoting()).toBeDefined());it("set/get",()=>{const x=new CompVoting();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CompVoting();x.disable();expect(x.isActive()).toBe(false);});});
