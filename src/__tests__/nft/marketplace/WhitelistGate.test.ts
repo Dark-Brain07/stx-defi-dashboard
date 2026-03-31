@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{WhitelistGate}from"../../lib/nft/marketplace/WhitelistGate";
+describe("WhitelistGate",()=>{it("ok",()=>expect(new WhitelistGate()).toBeDefined());it("set/get",()=>{const x=new WhitelistGate();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new WhitelistGate();x.disable();expect(x.isActive()).toBe(false);});});
