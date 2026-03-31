@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{IPBlocker}from"../../lib/admin/panel/IPBlocker";
+describe("IPBlocker",()=>{it("ok",()=>expect(new IPBlocker()).toBeDefined());it("set/get",()=>{const x=new IPBlocker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new IPBlocker();x.disable();expect(x.isActive()).toBe(false);});});
