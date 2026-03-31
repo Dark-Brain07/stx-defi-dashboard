@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BountyBoard}from"../../lib/dao/governance/BountyBoard";
+describe("BountyBoard",()=>{it("ok",()=>expect(new BountyBoard()).toBeDefined());it("set/get",()=>{const x=new BountyBoard();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BountyBoard();x.disable();expect(x.isActive()).toBe(false);});});
