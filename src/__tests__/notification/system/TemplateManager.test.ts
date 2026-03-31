@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TemplateManager}from"../../lib/notification/system/TemplateManager";
+describe("TemplateManager",()=>{it("ok",()=>expect(new TemplateManager()).toBeDefined());it("set/get",()=>{const x=new TemplateManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TemplateManager();x.disable();expect(x.isActive()).toBe(false);});});
