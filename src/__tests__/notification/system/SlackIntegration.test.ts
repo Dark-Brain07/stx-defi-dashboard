@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SlackIntegration}from"../../lib/notification/system/SlackIntegration";
+describe("SlackIntegration",()=>{it("ok",()=>expect(new SlackIntegration()).toBeDefined());it("set/get",()=>{const x=new SlackIntegration();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SlackIntegration();x.disable();expect(x.isActive()).toBe(false);});});
