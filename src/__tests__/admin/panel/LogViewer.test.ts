@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LogViewer}from"../../lib/admin/panel/LogViewer";
+describe("LogViewer",()=>{it("ok",()=>expect(new LogViewer()).toBeDefined());it("set/get",()=>{const x=new LogViewer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LogViewer();x.disable();expect(x.isActive()).toBe(false);});});
