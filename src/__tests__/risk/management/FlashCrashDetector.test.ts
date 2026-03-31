@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FlashCrashDetector}from"../../lib/risk/management/FlashCrashDetector";
+describe("FlashCrashDetector",()=>{it("ok",()=>expect(new FlashCrashDetector()).toBeDefined());it("set/get",()=>{const x=new FlashCrashDetector();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FlashCrashDetector();x.disable();expect(x.isActive()).toBe(false);});});
