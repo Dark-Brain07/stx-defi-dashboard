@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{NotificationCenter}from"../../lib/notification/system/NotificationCenter";
+describe("NotificationCenter",()=>{it("ok",()=>expect(new NotificationCenter()).toBeDefined());it("set/get",()=>{const x=new NotificationCenter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new NotificationCenter();x.disable();expect(x.isActive()).toBe(false);});});
