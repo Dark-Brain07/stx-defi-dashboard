@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PreferenceStore}from"../../lib/notification/system/PreferenceStore";
+describe("PreferenceStore",()=>{it("ok",()=>expect(new PreferenceStore()).toBeDefined());it("set/get",()=>{const x=new PreferenceStore();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PreferenceStore();x.disable();expect(x.isActive()).toBe(false);});});
