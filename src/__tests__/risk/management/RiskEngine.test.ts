@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RiskEngine}from"../../lib/risk/management/RiskEngine";
+describe("RiskEngine",()=>{it("ok",()=>expect(new RiskEngine()).toBeDefined());it("set/get",()=>{const x=new RiskEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RiskEngine();x.disable();expect(x.isActive()).toBe(false);});});
