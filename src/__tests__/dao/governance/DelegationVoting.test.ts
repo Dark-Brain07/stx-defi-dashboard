@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DelegationVoting}from"../../lib/dao/governance/DelegationVoting";
+describe("DelegationVoting",()=>{it("ok",()=>expect(new DelegationVoting()).toBeDefined());it("set/get",()=>{const x=new DelegationVoting();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DelegationVoting();x.disable();expect(x.isActive()).toBe(false);});});
