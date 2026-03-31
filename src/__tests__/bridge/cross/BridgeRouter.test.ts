@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BridgeRouter}from"../../lib/bridge/cross/BridgeRouter";
+describe("BridgeRouter",()=>{it("ok",()=>expect(new BridgeRouter()).toBeDefined());it("set/get",()=>{const x=new BridgeRouter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BridgeRouter();x.disable();expect(x.isActive()).toBe(false);});});
