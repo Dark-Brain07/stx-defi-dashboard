@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{OracleRisk}from"../../lib/risk/management/OracleRisk";
+describe("OracleRisk",()=>{it("ok",()=>expect(new OracleRisk()).toBeDefined());it("set/get",()=>{const x=new OracleRisk();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new OracleRisk();x.disable();expect(x.isActive()).toBe(false);});});
