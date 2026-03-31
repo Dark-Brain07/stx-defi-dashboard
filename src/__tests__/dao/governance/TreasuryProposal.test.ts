@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TreasuryProposal}from"../../lib/dao/governance/TreasuryProposal";
+describe("TreasuryProposal",()=>{it("ok",()=>expect(new TreasuryProposal()).toBeDefined());it("set/get",()=>{const x=new TreasuryProposal();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TreasuryProposal();x.disable();expect(x.isActive()).toBe(false);});});
