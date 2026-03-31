@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RiskScorecard}from"../../lib/risk/management/RiskScorecard";
+describe("RiskScorecard",()=>{it("ok",()=>expect(new RiskScorecard()).toBeDefined());it("set/get",()=>{const x=new RiskScorecard();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RiskScorecard();x.disable();expect(x.isActive()).toBe(false);});});
