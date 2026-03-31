@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VetoManager}from"../../lib/dao/governance/VetoManager";
+describe("VetoManager",()=>{it("ok",()=>expect(new VetoManager()).toBeDefined());it("set/get",()=>{const x=new VetoManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VetoManager();x.disable();expect(x.isActive()).toBe(false);});});
