@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CounterpartyRisk}from"../../lib/risk/management/CounterpartyRisk";
+describe("CounterpartyRisk",()=>{it("ok",()=>expect(new CounterpartyRisk()).toBeDefined());it("set/get",()=>{const x=new CounterpartyRisk();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CounterpartyRisk();x.disable();expect(x.isActive()).toBe(false);});});
