@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CollectionRanker}from"../../lib/nft/marketplace/CollectionRanker";
+describe("CollectionRanker",()=>{it("ok",()=>expect(new CollectionRanker()).toBeDefined());it("set/get",()=>{const x=new CollectionRanker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CollectionRanker();x.disable();expect(x.isActive()).toBe(false);});});
