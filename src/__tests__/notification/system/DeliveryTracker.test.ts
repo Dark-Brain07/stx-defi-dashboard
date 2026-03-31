@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DeliveryTracker}from"../../lib/notification/system/DeliveryTracker";
+describe("DeliveryTracker",()=>{it("ok",()=>expect(new DeliveryTracker()).toBeDefined());it("set/get",()=>{const x=new DeliveryTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DeliveryTracker();x.disable();expect(x.isActive()).toBe(false);});});
