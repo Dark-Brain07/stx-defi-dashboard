@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{HealthCheck}from"../../lib/admin/panel/HealthCheck";
+describe("HealthCheck",()=>{it("ok",()=>expect(new HealthCheck()).toBeDefined());it("set/get",()=>{const x=new HealthCheck();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new HealthCheck();x.disable();expect(x.isActive()).toBe(false);});});
