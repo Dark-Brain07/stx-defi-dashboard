@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ReadReceipt}from"../../lib/notification/system/ReadReceipt";
+describe("ReadReceipt",()=>{it("ok",()=>expect(new ReadReceipt()).toBeDefined());it("set/get",()=>{const x=new ReadReceipt();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ReadReceipt();x.disable();expect(x.isActive()).toBe(false);});});
