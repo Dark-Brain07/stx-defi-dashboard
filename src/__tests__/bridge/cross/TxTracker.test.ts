@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TxTracker}from"../../lib/bridge/cross/TxTracker";
+describe("TxTracker",()=>{it("ok",()=>expect(new TxTracker()).toBeDefined());it("set/get",()=>{const x=new TxTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TxTracker();x.disable();expect(x.isActive()).toBe(false);});});
