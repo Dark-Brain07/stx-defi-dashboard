@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AdminDashboard}from"../../lib/admin/panel/AdminDashboard";
+describe("AdminDashboard",()=>{it("ok",()=>expect(new AdminDashboard()).toBeDefined());it("set/get",()=>{const x=new AdminDashboard();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AdminDashboard();x.disable();expect(x.isActive()).toBe(false);});});
