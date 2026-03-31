@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ChainRegistry}from"../../lib/bridge/cross/ChainRegistry";
+describe("ChainRegistry",()=>{it("ok",()=>expect(new ChainRegistry()).toBeDefined());it("set/get",()=>{const x=new ChainRegistry();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ChainRegistry();x.disable();expect(x.isActive()).toBe(false);});});
