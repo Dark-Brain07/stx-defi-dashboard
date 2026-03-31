@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BalanceSync}from"../../lib/bridge/cross/BalanceSync";
+describe("BalanceSync",()=>{it("ok",()=>expect(new BalanceSync()).toBeDefined());it("set/get",()=>{const x=new BalanceSync();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BalanceSync();x.disable();expect(x.isActive()).toBe(false);});});
