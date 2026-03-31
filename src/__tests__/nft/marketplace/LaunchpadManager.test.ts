@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LaunchpadManager}from"../../lib/nft/marketplace/LaunchpadManager";
+describe("LaunchpadManager",()=>{it("ok",()=>expect(new LaunchpadManager()).toBeDefined());it("set/get",()=>{const x=new LaunchpadManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LaunchpadManager();x.disable();expect(x.isActive()).toBe(false);});});
