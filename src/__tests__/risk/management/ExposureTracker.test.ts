@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ExposureTracker}from"../../lib/risk/management/ExposureTracker";
+describe("ExposureTracker",()=>{it("ok",()=>expect(new ExposureTracker()).toBeDefined());it("set/get",()=>{const x=new ExposureTracker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ExposureTracker();x.disable();expect(x.isActive()).toBe(false);});});
