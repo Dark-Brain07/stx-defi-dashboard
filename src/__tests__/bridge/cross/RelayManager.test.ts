@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RelayManager}from"../../lib/bridge/cross/RelayManager";
+describe("RelayManager",()=>{it("ok",()=>expect(new RelayManager()).toBeDefined());it("set/get",()=>{const x=new RelayManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RelayManager();x.disable();expect(x.isActive()).toBe(false);});});
