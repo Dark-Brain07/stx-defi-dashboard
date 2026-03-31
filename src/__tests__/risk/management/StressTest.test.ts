@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StressTest}from"../../lib/risk/management/StressTest";
+describe("StressTest",()=>{it("ok",()=>expect(new StressTest()).toBeDefined());it("set/get",()=>{const x=new StressTest();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StressTest();x.disable();expect(x.isActive()).toBe(false);});});
