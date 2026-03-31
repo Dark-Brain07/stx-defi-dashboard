@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{InsuranceFund}from"../../lib/risk/management/InsuranceFund";
+describe("InsuranceFund",()=>{it("ok",()=>expect(new InsuranceFund()).toBeDefined());it("set/get",()=>{const x=new InsuranceFund();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new InsuranceFund();x.disable();expect(x.isActive()).toBe(false);});});
