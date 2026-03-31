@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VotingEngine}from"../../lib/dao/governance/VotingEngine";
+describe("VotingEngine",()=>{it("ok",()=>expect(new VotingEngine()).toBeDefined());it("set/get",()=>{const x=new VotingEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VotingEngine();x.disable();expect(x.isActive()).toBe(false);});});
