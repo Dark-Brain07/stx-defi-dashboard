@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RoyaltyDistributor}from"../../lib/nft/marketplace/RoyaltyDistributor";
+describe("RoyaltyDistributor",()=>{it("ok",()=>expect(new RoyaltyDistributor()).toBeDefined());it("set/get",()=>{const x=new RoyaltyDistributor();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RoyaltyDistributor();x.disable();expect(x.isActive()).toBe(false);});});
