@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SalesHistory}from"../../lib/nft/marketplace/SalesHistory";
+describe("SalesHistory",()=>{it("ok",()=>expect(new SalesHistory()).toBeDefined());it("set/get",()=>{const x=new SalesHistory();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SalesHistory();x.disable();expect(x.isActive()).toBe(false);});});
