@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{StatusPoller}from"../../lib/bridge/cross/StatusPoller";
+describe("StatusPoller",()=>{it("ok",()=>expect(new StatusPoller()).toBeDefined());it("set/get",()=>{const x=new StatusPoller();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new StatusPoller();x.disable();expect(x.isActive()).toBe(false);});});
