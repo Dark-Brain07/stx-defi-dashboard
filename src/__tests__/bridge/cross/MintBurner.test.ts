@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{MintBurner}from"../../lib/bridge/cross/MintBurner";
+describe("MintBurner",()=>{it("ok",()=>expect(new MintBurner()).toBeDefined());it("set/get",()=>{const x=new MintBurner();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new MintBurner();x.disable();expect(x.isActive()).toBe(false);});});
