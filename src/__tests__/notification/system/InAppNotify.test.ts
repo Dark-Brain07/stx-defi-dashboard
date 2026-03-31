@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{InAppNotify}from"../../lib/notification/system/InAppNotify";
+describe("InAppNotify",()=>{it("ok",()=>expect(new InAppNotify()).toBeDefined());it("set/get",()=>{const x=new InAppNotify();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new InAppNotify();x.disable();expect(x.isActive()).toBe(false);});});
