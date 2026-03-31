@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AlertPriority}from"../../lib/notification/system/AlertPriority";
+describe("AlertPriority",()=>{it("ok",()=>expect(new AlertPriority()).toBeDefined());it("set/get",()=>{const x=new AlertPriority();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AlertPriority();x.disable();expect(x.isActive()).toBe(false);});});
