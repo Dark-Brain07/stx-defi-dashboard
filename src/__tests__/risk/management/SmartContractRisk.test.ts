@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SmartContractRisk}from"../../lib/risk/management/SmartContractRisk";
+describe("SmartContractRisk",()=>{it("ok",()=>expect(new SmartContractRisk()).toBeDefined());it("set/get",()=>{const x=new SmartContractRisk();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SmartContractRisk();x.disable();expect(x.isActive()).toBe(false);});});
