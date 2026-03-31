@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AssetLocker}from"../../lib/bridge/cross/AssetLocker";
+describe("AssetLocker",()=>{it("ok",()=>expect(new AssetLocker()).toBeDefined());it("set/get",()=>{const x=new AssetLocker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AssetLocker();x.disable();expect(x.isActive()).toBe(false);});});
