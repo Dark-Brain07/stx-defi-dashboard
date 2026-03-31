@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{VaRCalculator}from"../../lib/risk/management/VaRCalculator";
+describe("VaRCalculator",()=>{it("ok",()=>expect(new VaRCalculator()).toBeDefined());it("set/get",()=>{const x=new VaRCalculator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new VaRCalculator();x.disable();expect(x.isActive()).toBe(false);});});
