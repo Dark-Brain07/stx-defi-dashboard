@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ErrorHandler}from"../../lib/bridge/cross/ErrorHandler";
+describe("ErrorHandler",()=>{it("ok",()=>expect(new ErrorHandler()).toBeDefined());it("set/get",()=>{const x=new ErrorHandler();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ErrorHandler();x.disable();expect(x.isActive()).toBe(false);});});
