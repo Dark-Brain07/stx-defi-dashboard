@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BatchSender}from"../../lib/notification/system/BatchSender";
+describe("BatchSender",()=>{it("ok",()=>expect(new BatchSender()).toBeDefined());it("set/get",()=>{const x=new BatchSender();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BatchSender();x.disable();expect(x.isActive()).toBe(false);});});
