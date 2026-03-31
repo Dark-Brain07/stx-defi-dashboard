@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ConfigManager}from"../../lib/bridge/cross/ConfigManager";
+describe("ConfigManager",()=>{it("ok",()=>expect(new ConfigManager()).toBeDefined());it("set/get",()=>{const x=new ConfigManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ConfigManager();x.disable();expect(x.isActive()).toBe(false);});});
