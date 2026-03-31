@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{TelegramBot}from"../../lib/notification/system/TelegramBot";
+describe("TelegramBot",()=>{it("ok",()=>expect(new TelegramBot()).toBeDefined());it("set/get",()=>{const x=new TelegramBot();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new TelegramBot();x.disable();expect(x.isActive()).toBe(false);});});
