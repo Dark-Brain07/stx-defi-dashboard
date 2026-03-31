@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{AttributeFilter}from"../../lib/nft/marketplace/AttributeFilter";
+describe("AttributeFilter",()=>{it("ok",()=>expect(new AttributeFilter()).toBeDefined());it("set/get",()=>{const x=new AttributeFilter();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new AttributeFilter();x.disable();expect(x.isActive()).toBe(false);});});
