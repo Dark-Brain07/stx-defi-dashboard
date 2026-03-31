@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{UserManager}from"../../lib/admin/panel/UserManager";
+describe("UserManager",()=>{it("ok",()=>expect(new UserManager()).toBeDefined());it("set/get",()=>{const x=new UserManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new UserManager();x.disable();expect(x.isActive()).toBe(false);});});
