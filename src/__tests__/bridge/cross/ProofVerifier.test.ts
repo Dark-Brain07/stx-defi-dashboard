@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ProofVerifier}from"../../lib/bridge/cross/ProofVerifier";
+describe("ProofVerifier",()=>{it("ok",()=>expect(new ProofVerifier()).toBeDefined());it("set/get",()=>{const x=new ProofVerifier();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ProofVerifier();x.disable();expect(x.isActive()).toBe(false);});});
