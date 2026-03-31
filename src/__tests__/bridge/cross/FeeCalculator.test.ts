@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{FeeCalculator}from"../../lib/bridge/cross/FeeCalculator";
+describe("FeeCalculator",()=>{it("ok",()=>expect(new FeeCalculator()).toBeDefined());it("set/get",()=>{const x=new FeeCalculator();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new FeeCalculator();x.disable();expect(x.isActive()).toBe(false);});});
