@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{DrawdownMonitor}from"../../lib/risk/management/DrawdownMonitor";
+describe("DrawdownMonitor",()=>{it("ok",()=>expect(new DrawdownMonitor()).toBeDefined());it("set/get",()=>{const x=new DrawdownMonitor();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new DrawdownMonitor();x.disable();expect(x.isActive()).toBe(false);});});
