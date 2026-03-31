@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SystemConfig}from"../../lib/admin/panel/SystemConfig";
+describe("SystemConfig",()=>{it("ok",()=>expect(new SystemConfig()).toBeDefined());it("set/get",()=>{const x=new SystemConfig();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SystemConfig();x.disable();expect(x.isActive()).toBe(false);});});
