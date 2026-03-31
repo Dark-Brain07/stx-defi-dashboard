@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RarityScorer}from"../../lib/nft/marketplace/RarityScorer";
+describe("RarityScorer",()=>{it("ok",()=>expect(new RarityScorer()).toBeDefined());it("set/get",()=>{const x=new RarityScorer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RarityScorer();x.disable();expect(x.isActive()).toBe(false);});});
