@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{NFTListingEngine}from"../../lib/nft/marketplace/NFTListingEngine";
+describe("NFTListingEngine",()=>{it("ok",()=>expect(new NFTListingEngine()).toBeDefined());it("set/get",()=>{const x=new NFTListingEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new NFTListingEngine();x.disable();expect(x.isActive()).toBe(false);});});
