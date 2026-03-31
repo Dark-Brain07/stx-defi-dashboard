@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RageQuit}from"../../lib/dao/governance/RageQuit";
+describe("RageQuit",()=>{it("ok",()=>expect(new RageQuit()).toBeDefined());it("set/get",()=>{const x=new RageQuit();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RageQuit();x.disable();expect(x.isActive()).toBe(false);});});
