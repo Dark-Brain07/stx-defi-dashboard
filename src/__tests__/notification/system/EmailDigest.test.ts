@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{EmailDigest}from"../../lib/notification/system/EmailDigest";
+describe("EmailDigest",()=>{it("ok",()=>expect(new EmailDigest()).toBeDefined());it("set/get",()=>{const x=new EmailDigest();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new EmailDigest();x.disable();expect(x.isActive()).toBe(false);});});
