@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{QuorumChecker}from"../../lib/dao/governance/QuorumChecker";
+describe("QuorumChecker",()=>{it("ok",()=>expect(new QuorumChecker()).toBeDefined());it("set/get",()=>{const x=new QuorumChecker();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new QuorumChecker();x.disable();expect(x.isActive()).toBe(false);});});
