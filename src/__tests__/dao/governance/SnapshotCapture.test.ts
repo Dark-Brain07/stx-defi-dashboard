@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{SnapshotCapture}from"../../lib/dao/governance/SnapshotCapture";
+describe("SnapshotCapture",()=>{it("ok",()=>expect(new SnapshotCapture()).toBeDefined());it("set/get",()=>{const x=new SnapshotCapture();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new SnapshotCapture();x.disable();expect(x.isActive()).toBe(false);});});
