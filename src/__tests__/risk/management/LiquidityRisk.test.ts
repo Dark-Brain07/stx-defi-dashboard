@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{LiquidityRisk}from"../../lib/risk/management/LiquidityRisk";
+describe("LiquidityRisk",()=>{it("ok",()=>expect(new LiquidityRisk()).toBeDefined());it("set/get",()=>{const x=new LiquidityRisk();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new LiquidityRisk();x.disable();expect(x.isActive()).toBe(false);});});
