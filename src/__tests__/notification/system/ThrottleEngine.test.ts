@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{ThrottleEngine}from"../../lib/notification/system/ThrottleEngine";
+describe("ThrottleEngine",()=>{it("ok",()=>expect(new ThrottleEngine()).toBeDefined());it("set/get",()=>{const x=new ThrottleEngine();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new ThrottleEngine();x.disable();expect(x.isActive()).toBe(false);});});
