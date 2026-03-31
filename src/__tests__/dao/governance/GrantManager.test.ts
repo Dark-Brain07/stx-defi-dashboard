@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{GrantManager}from"../../lib/dao/governance/GrantManager";
+describe("GrantManager",()=>{it("ok",()=>expect(new GrantManager()).toBeDefined());it("set/get",()=>{const x=new GrantManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new GrantManager();x.disable();expect(x.isActive()).toBe(false);});});
