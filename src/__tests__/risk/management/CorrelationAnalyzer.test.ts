@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{CorrelationAnalyzer}from"../../lib/risk/management/CorrelationAnalyzer";
+describe("CorrelationAnalyzer",()=>{it("ok",()=>expect(new CorrelationAnalyzer()).toBeDefined());it("set/get",()=>{const x=new CorrelationAnalyzer();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new CorrelationAnalyzer();x.disable();expect(x.isActive()).toBe(false);});});
