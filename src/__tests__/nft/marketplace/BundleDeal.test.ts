@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{BundleDeal}from"../../lib/nft/marketplace/BundleDeal";
+describe("BundleDeal",()=>{it("ok",()=>expect(new BundleDeal()).toBeDefined());it("set/get",()=>{const x=new BundleDeal();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new BundleDeal();x.disable();expect(x.isActive()).toBe(false);});});
