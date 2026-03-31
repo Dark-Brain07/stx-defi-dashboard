@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{WebhookNotifier}from"../../lib/notification/system/WebhookNotifier";
+describe("WebhookNotifier",()=>{it("ok",()=>expect(new WebhookNotifier()).toBeDefined());it("set/get",()=>{const x=new WebhookNotifier();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new WebhookNotifier();x.disable();expect(x.isActive()).toBe(false);});});
