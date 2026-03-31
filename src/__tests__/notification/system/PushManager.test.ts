@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{PushManager}from"../../lib/notification/system/PushManager";
+describe("PushManager",()=>{it("ok",()=>expect(new PushManager()).toBeDefined());it("set/get",()=>{const x=new PushManager();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new PushManager();x.disable();expect(x.isActive()).toBe(false);});});
