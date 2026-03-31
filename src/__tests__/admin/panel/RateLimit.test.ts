@@ -1,0 +1,2 @@
+import{describe,it,expect}from"vitest";import{RateLimit}from"../../lib/admin/panel/RateLimit";
+describe("RateLimit",()=>{it("ok",()=>expect(new RateLimit()).toBeDefined());it("set/get",()=>{const x=new RateLimit();x.set("k",1);expect(x.get("k")).toBe(1);});it("toggle",()=>{const x=new RateLimit();x.disable();expect(x.isActive()).toBe(false);});});
