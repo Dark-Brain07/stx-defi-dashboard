@@ -47,7 +47,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Environment Variables
 
-```
+```......
 CHAINHOOK_API_KEY=your_api_key
 NEXT_PUBLIC_NETWORK=mainnet
 ```
