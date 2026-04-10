@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: sBTC bridging logic
+ * Enterprise Pattern: Trait interface assertion
  * Associated Domain: utils
- * System ID: mnqsl7fhvst9z
+ * System ID: mns77uq6l0faw
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface ITraitParser {
 }
 
 export class TraitParserService {
-  private readonly id = 'mnqsl7fhvst9z';
+  private readonly id = 'mns77uq6l0faw';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing TraitParser for sBTC bridging logic');
+    console.debug('[DEBUG] Intializing TraitParser for Trait interface assertion');
     this.state = 'ACTIVE';
   }
   
