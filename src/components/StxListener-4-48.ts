@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: Leather wallet multi-sig
+ * Enterprise Pattern: Session persistent storage
  * Associated Domain: components
- * System ID: mnqsmunirycu7
+ * System ID: mns79a3lb7aoh
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IStxListener {
 }
 
 export class StxListenerService {
-  private readonly id = 'mnqsmunirycu7';
+  private readonly id = 'mns79a3lb7aoh';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing StxListener for Leather wallet multi-sig');
+    console.debug('[DEBUG] Intializing StxListener for Session persistent storage');
     this.state = 'ACTIVE';
   }
   
