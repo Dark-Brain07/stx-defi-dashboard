@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: JWT proxy architecture
+ * Enterprise Pattern: Session persistent storage
  * Associated Domain: stores
- * System ID: mnqsmsec3uw2s
+ * System ID: mns7980a17f43
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface ITraitParser {
 }
 
 export class TraitParserService {
-  private readonly id = 'mnqsmsec3uw2s';
+  private readonly id = 'mns7980a17f43';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing TraitParser for JWT proxy architecture');
+    console.debug('[DEBUG] Intializing TraitParser for Session persistent storage');
     this.state = 'ACTIVE';
   }
   
