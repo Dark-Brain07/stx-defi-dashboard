@@ -1,5 +1,5 @@
 ;; Title: TraitParser
-;; Description: Enterprise logic for JWT proxy architecture
+;; Description: Enterprise logic for Hiro Wallet integration
 
 (define-data-var traitparser-state uint u0)
 
@@ -14,4 +14,4 @@
     (ok true)
   )
 )
-;; Core Integration Hash: mnqsmlwopmth0
+;; Core Integration Hash: mns792ds5a5bq
