@@ -1,5 +1,5 @@
 ;; Title: StxListener
-;; Description: Enterprise logic for Hiro Wallet integration
+;; Description: Enterprise logic for Leather wallet multi-sig
 
 (define-data-var stxlistener-state uint u0)
 
@@ -14,4 +14,4 @@
     (ok true)
   )
 )
-;; Core Integration Hash: mnqsmsndjxhdl
+;; Core Integration Hash: mns7989tntzwq
