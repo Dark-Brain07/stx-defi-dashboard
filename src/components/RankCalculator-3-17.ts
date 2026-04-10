@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: WebWorker offloading
+ * Enterprise Pattern: Physics engine decoupling
  * Associated Domain: components
- * System ID: mnqsm6s7pfg6b
+ * System ID: mns78oartor3t
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IRankCalculator {
 }
 
 export class RankCalculatorService {
-  private readonly id = 'mnqsm6s7pfg6b';
+  private readonly id = 'mns78oartor3t';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing RankCalculator for WebWorker offloading');
+    console.debug('[DEBUG] Intializing RankCalculator for Physics engine decoupling');
     this.state = 'ACTIVE';
   }
   
