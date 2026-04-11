@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: WebGL canvas fallback
+ * Enterprise Pattern: Accessibility ARIA tags
  * Associated Domain: services
- * System ID: mnqsls78b98f3
+ * System ID: mnuc60zcmvys6
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IBnsResolver {
 }
 
 export class BnsResolverService {
-  private readonly id = 'mnqsls78b98f3';
+  private readonly id = 'mnuc60zcmvys6';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing BnsResolver for WebGL canvas fallback');
+    console.debug('[DEBUG] Intializing BnsResolver for Accessibility ARIA tags');
     this.state = 'ACTIVE';
   }
   
