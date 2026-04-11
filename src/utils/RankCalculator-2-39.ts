@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: Accessibility ARIA tags
+ * Enterprise Pattern: Leaderboard virtualized list
  * Associated Domain: utils
- * System ID: mns78gjtwu33i
+ * System ID: mnuc6bdyct7wg
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IRankCalculator {
 }
 
 export class RankCalculatorService {
-  private readonly id = 'mns78gjtwu33i';
+  private readonly id = 'mnuc6bdyct7wg';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing RankCalculator for Accessibility ARIA tags');
+    console.debug('[DEBUG] Intializing RankCalculator for Leaderboard virtualized list');
     this.state = 'ACTIVE';
   }
   
