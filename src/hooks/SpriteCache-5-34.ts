@@ -1,7 +1,7 @@
 /**
  * Enterprise Pattern: Trait interface assertion
  * Associated Domain: hooks
- * System ID: mns79m6if2ppn
+ * System ID: mnuc7eqmm2ihu
  */
 
 import { useState, useEffect } from 'react';
@@ -13,7 +13,7 @@ export interface ISpriteCache {
 }
 
 export class SpriteCacheService {
-  private readonly id = 'mns79m6if2ppn';
+  private readonly id = 'mnuc7eqmm2ihu';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
