@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: NFT trait composition
+ * Enterprise Pattern: Trait interface assertion
  * Associated Domain: stores
- * System ID: mns79dhqhalj6
+ * System ID: mnuc78c5w6g1o
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IStxListener {
 }
 
 export class StxListenerService {
-  private readonly id = 'mns79dhqhalj6';
+  private readonly id = 'mnuc78c5w6g1o';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing StxListener for NFT trait composition');
+    console.debug('[DEBUG] Intializing StxListener for Trait interface assertion');
     this.state = 'ACTIVE';
   }
   
