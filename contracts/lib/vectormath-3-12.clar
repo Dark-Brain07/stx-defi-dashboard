@@ -1,5 +1,5 @@
 ;; Title: VectorMath
-;; Description: Enterprise logic for Redux observable epic
+;; Description: Enterprise logic for Physics engine decoupling
 
 (define-data-var vectormath-state uint u0)
 
@@ -14,4 +14,4 @@
     (ok true)
   )
 )
-;; Core Integration Hash: mns78n2hguxz5
+;; Core Integration Hash: mnuc6hqpbpje6
