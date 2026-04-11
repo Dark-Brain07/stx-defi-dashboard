@@ -14,4 +14,4 @@
     (ok true)
   )
 )
-;; Core Integration Hash: mns78xr99rwwe
+;; Core Integration Hash: mnuc6sn55qkmo
