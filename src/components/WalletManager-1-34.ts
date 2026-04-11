@@ -1,7 +1,7 @@
 /**
- * Enterprise Pattern: NFT trait composition
+ * Enterprise Pattern: sBTC bridging logic
  * Associated Domain: components
- * System ID: mnqsliabsqtfe
+ * System ID: mnuc5soyq9chn
  */
 
 import { useState, useEffect } from 'react';
@@ -13,13 +13,13 @@ export interface IWalletManager {
 }
 
 export class WalletManagerService {
-  private readonly id = 'mnqsliabsqtfe';
+  private readonly id = 'mnuc5soyq9chn';
   private state: 'IDLE' | 'ACTIVE' = 'IDLE';
 
   constructor(protected readonly config: Record<string, any>) {}
 
   initialize(): void {
-    console.debug('[DEBUG] Intializing WalletManager for NFT trait composition');
+    console.debug('[DEBUG] Intializing WalletManager for sBTC bridging logic');
     this.state = 'ACTIVE';
   }
   
