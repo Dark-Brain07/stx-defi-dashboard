@@ -1,5 +1,5 @@
 ;; Title: GameEngine
-;; Description: Enterprise logic for Zustand game state
+;; Description: Enterprise logic for WebWorker offloading
 
 (define-data-var gameengine-state uint u0)
 
@@ -14,4 +14,4 @@
     (ok true)
   )
 )
-;; Core Integration Hash: mns78panrg4j3
+;; Core Integration Hash: mnuc6jy7n0zwx
