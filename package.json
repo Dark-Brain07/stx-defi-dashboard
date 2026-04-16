@@ -1,7 +1,15 @@
 {
-  "name": "stx-defi-dashboard",
+  "name": "@rajuice/stx-defi-dashboard",
   "version": "1.0.0",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dark-Brain07/stx-defi-dashboard.git"
+  },
+  "homepage": "https://github.com/Dark-Brain07/stx-defi-dashboard",
+  "bugs": {
+    "url": "https://github.com/Dark-Brain07/stx-defi-dashboard/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
